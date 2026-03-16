@@ -4,6 +4,8 @@ octs.tools is a frontend-only EVM contract interaction console for technical use
 
 It is designed to stay protocol-agnostic and backend-independent. If a contract is deployed, the ABI is available, and the caller knows the required arguments, octs.tools should be enough to execute read calls, simulate writes, and submit transactions directly from an injected wallet.
 
+Repository: https://github.com/hjasgdjg/octs.tools.git
+
 ## Principles
 
 - frontend-only

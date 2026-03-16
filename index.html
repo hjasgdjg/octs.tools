@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>octs.tools</title>
+    <script>
+      (() => {
+        const storageKey = 'octs-tools-session';
+        const raw = localStorage.getItem(storageKey);
+
+        if (!raw) {
+          document.documentElement.classList.add('dark');
+          return;
+        }
+
+        try {
+          const parsed = JSON.parse(raw);
+          const theme = parsed?.state?.theme;
+          document.documentElement.classList.toggle('dark', theme !== 'light');
+        } catch {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
