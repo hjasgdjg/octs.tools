@@ -55,7 +55,7 @@ const initialSessionState = {
   abiInput: DEFAULT_ABI,
   selectedFunctionKey: null,
   customRpcUrl: '',
-  theme: 'light' as ThemeMode,
+  theme: 'dark' as ThemeMode,
   recentSessions: [] as RecentContractSession[],
   executionHistory: [] as ExecutionHistoryItem[],
 };
